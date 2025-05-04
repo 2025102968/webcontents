@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="utf-8">
+        <title>시맨틱 태그로 구조화 연습</title>
+        <style>
+            table{
+                border-collapse: collapse;
+            }
+            td,th{
+                text-align: center;
+                padding: 5px;
+                height: 15px;
+                width: 100px;
+            }
+            tbody tr:nth-child(even){
+                background: aliceblue;
+            }
+            tbody tr:hover{
+                background: pink;
+            }
+        </style>
+    </head>
+
+    <body style= "background-color:aliceblue;">
+
+        <header>
+            <h1 style="color: brown;"><p style="text-align:center">최서영</p></h1>
+            <hr>
+            <p style="text-indent:1em
+                    font-style:1em;
+                    font-family:휴먼편지체, sans-serif;">
+                안녕하세요? 제 이름은 최서영입니다. 올해 대학교를 입학한 새내기입니다.<br>
+                다양한 관심분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요~</p><br>
+
+            <audio src="media/video.mp3"controls loop>
+            브라우저가 audio 태그를 지원하지 않습니다.
+            </audio>
+        </header>
+
+        <nav>
+            <h3 style="text-shadow: 1px 1px 3px skyblue;">목차</h3>
+            <ul style="border:1px dotted blue;">
+                <li><a href="#관심분야" style="text-decoration: none;">관심분야</a>
+                <li><a href="#취미활동" style="text-decoration: none;">취미활동</a>
+                <li><a href="#강의시간표" style="text-decoration: none;">강의시간표</a>
+            </ul>
+        </nav><br><br>
+
+        <section>
+            <article>
+                <h3 id="관심분야" style="text-shadow: 1px 1px 3px skyblue;">관심분야</h3>
+                <hr>
+                <li>노래듣기</li>
+                    <ul>
+                        <li>팝송</li>
+                        <li>kpop</li>
+                        <li>ost</li>
+                    </ul>
+                <li>좋아하는 음식</li>
+                    <ul>
+                        <li>밥</li>
+                        <li>고기</li>
+                        <li>치킨</li>
+                    </ul>
+                <li>옷</li>
+                    <ul>
+                        <li>청바지</li>
+                        <li>니트</li>
+                        <li>후드티</li>
+                    </ul>
+            </article><br><br>
+
+            <article>
+                <h3 id="취미활동" style="text-shadow: 1px 1px 3px skyblue;">취미활동</h3>
+                <hr>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th><img src="media/운동.jpg"></th>
+                            <th><img src="media/movie.jpg"></th>
+                            <th><img src="media/그림 그리기.jpg"></th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th><p style="text-align:center">운동</p></th>
+                            <th><p style="text-align:center">영화보기</p></th>
+                            <th><p style="text-align:center">그림그리기</p></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article><br><br>
+
+            <article>
+                <h3 id="강의시간표" style="text-shadow: 1px 1px 3px skyblue;">강의시간표(2025년 1학기)</h3>
+                <hr>
+                <table border="1">
+                    <thead style="background: darkgray;
+                                    color: yellow;">
+                        <tr><th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
+                    </thead>
+                    <tfoot style="background: darkgray;
+                                color: yellow;">>
+                        
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td><p style="text-align:center">09</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align:center">10</p></td>
+                            <td></td>
+                            <td rowspan="3"><p style="text-align:center">프로그래밍언어실습I<br>(102/공603)</p></td>
+                            <td></td>
+                            <td rowspan="3"><p style="text-align:center">컴퓨터과학개론<br>(102/공507)</p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align:center">11</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align:center">12</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <td><p style="text-align:center">13</p></td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="2"><p style="text-align:center">프로그래밍언어실습I<br>(102/공603)</p></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align:center">14</p></td>
+                            <td></td>
+                            <td rowspan="2"><p style="text-align:center">컴퓨팅사고력<br>(102/공608)</p></td>
+                            <td rowspan="3"><p style="text-align:center">인터넷 콘텐츠<br>(102/공615)</p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align:center">15</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align:center">16</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align:center">17</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table><br>
+            </article>
+        </section>
+
+        <footer style="border-radius: 5px;
+        background-color: orange;
+        font-family:휴먼편지체, sans-serif;">
+            <a href="https://2025102968.github.io/webcontents/survey.html">설문조사</a>
+            <p>2025년 4월 10일 작성</p>
+        </footer>
+        
+    </body>
+</html>
